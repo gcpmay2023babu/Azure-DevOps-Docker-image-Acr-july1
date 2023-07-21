@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: gcpmaybabuazuredevopsdockerimageacrjuly21 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gcpmaybabuazuredevopsdockerimageacrjuly21
+  template:
+    metadata:
+      labels:
+        app: gcpmaybabuazuredevopsdockerimageacrjuly21 
+    spec:
+      containers:
+        - name: gcpmaybabuazuredevopsdockerimageacrjuly21 
+          image: azurecontregjuly21.azurecr.io/gcpmaybabuazuredevopsdockerimageacrjuly21
+          ports:
+          - containerPort: 80
