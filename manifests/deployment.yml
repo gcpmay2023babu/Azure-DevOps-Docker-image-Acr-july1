@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: giamge1 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: giamge1
+  template:
+    metadata:
+      labels:
+        app: giamge1 
+    spec:
+      containers:
+        - name: giamge1 
+          image: azurecontregjuly21.azurecr.io/giamge1
+          ports:
+          - containerPort: 80
